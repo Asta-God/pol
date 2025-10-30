@@ -32,6 +32,24 @@
             font-size: 1.3em;
         }
 
+        nav {
+            background-color: #1a1a1a;
+            padding: 12px;
+            border-bottom: 2px solid #ff6f00;
+        }
+
+        nav a {
+            color: #ff6f00;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff3d3d;
+            text-decoration: underline;
+        }
+
         .contenedor {
             display: flex;
             justify-content: center;
@@ -76,6 +94,22 @@
             margin-top: 40px;
             font-size: 0.9em;
         }
+
+        .boton-volver {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #ff6f00;
+            color: black;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton-volver:hover {
+            background-color: #ff3d3d;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -84,10 +118,15 @@
         <h2>Día de Muertos y La Catrina</h2>
     </header>
 
-    <div class="contenedor">
+    <nav>
+        <a href="#diademuertos">Día de Muertos</a>
+        <a href="#catrina">La Catrina</a>
+        <a href="#lugares">Lugares Turísticos</a>
+    </nav>
+
+    <div id="diademuertos" class="contenedor">
         <div class="cuadro">
             <h3>💀 Día de Muertos</h3>
-           
             <img src="xd.jpg" alt="Ofrenda de Día de Muertos">
             <p>
                 El <strong>Día de Muertos</strong> se celebra el <strong>1 y 2 de noviembre</strong> en todo México para honrar y recordar a los seres queridos que han fallecido.
@@ -97,10 +136,11 @@
                 Esta tradición mezcla creencias indígenas y católicas, representando la unión entre la vida y la muerte, con alegría y respeto.
             </p>
         </div>
+    </div>
 
+    <div id="catrina" class="contenedor">
         <div class="cuadro">
             <h3>🎩 La Catrina</h3>
-            
             <img src="ca.jpg" alt="La Catrina">
             <p>
                 <strong>La Catrina</strong> fue creada por el artista mexicano <strong>José Guadalupe Posada</strong> a principios del siglo XX. 
@@ -113,8 +153,51 @@
         </div>
     </div>
 
-    <footer>
-        © 2025 Tradiciones Mexicanas. Todos los derechos reservados.
-    </footer>
+    <div id="lugares" class="contenedor">
+        <div class="cuadro">
+            <h3>🏵️ Lugares Turísticos Tradicionales</h3>
+            <img src="ja.jpg" alt="Janitzio, Michoacán">
+            <p>
+                Uno de los lugares más emblemáticos para vivir el <strong>Día de Muertos</strong> es <strong>Janitzio</strong>, una isla del lago de Pátzcuaro en Michoacán.
+                Las familias purépechas decoran los panteones con velas y flores, creando una atmósfera única.
+            </p>
+            <p><strong>Costo aproximado de entrada:</strong> $50 MXN (acceso en lancha desde Pátzcuaro)</p>
+            <p>
+                Más información en:  
+                <a href="https://michoacan.travel/dia-de-muertos-en-janitzio/" target="_blank" style="color:#ff6f00;">Sitio oficial de Michoacán</a>
+            </p>
+        </div>
+
+        <div class="cuadro">
+            <h3>🕯️ Mixquic, Ciudad de México</h3>
+            <img src="san.jpg" alt="Mixquic, CDMX">
+            <p>
+                En <strong>San Andrés Mixquic</strong>, al sur de la Ciudad de México, se realiza una de las celebraciones más tradicionales del país.
+                Las calles se iluminan con velas durante la <em>“Alumbrada”</em> y los altares llenan las casas y plazas.
+            </p>
+            <p><strong>Costo de entrada:</strong> Gratuito</p>
+            <p>
+                Consulta la agenda en:  
+                <a href="https://cdmxtravel.com/es/lugares/san-andres-mixquic.html" target="_blank" style="color:#ff6f00;">CDMX Travel</a>
+            </p>
+        </div>
+
+        <div class="cuadro">
+            <h3>🪔 Huaquechula, Puebla</h3>
+            <img src="hua.jpg" alt="Altares en Huaquechula, Puebla">
+            <p>
+                Huaquechula es famosa por sus <strong>altares monumentales</strong> dedicados a los difuntos recientes.
+                Estas ofrendas se consideran verdaderas obras de arte y pueden medir más de tres metros de altura.
+            </p>
+            <p><strong>Costo de entrada:</strong> Gratuito</p>
+            <p>
+                Descubre más en:  
+                <a href="https://www.visitpuebla.mx/" target="_blank" style="color:#ff6f00;">Visit Puebla</a>
+            </p>
+        </div>
+    </div>
+
+    <a href="#top" class="boton-volver">⬆️ Volver al inicio</a>
+
 </body>
 </html>
