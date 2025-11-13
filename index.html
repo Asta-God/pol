@@ -197,7 +197,52 @@
         </div>
     </div>
 
+        <div id="comentarios" class="contenedor">
+        <div class="cuadro">
+            <h3>📝 Formulario de Satisfacción</h3>
+            <p>Queremos conocer tu opinión sobre esta página dedicada al Día de Muertos.  
+            Completa el siguiente formulario y tus comentarios serán enviados directamente a nuestro correo.</p>
+
+            <form action="https://formsubmit.co/gome080706hmcnrda1@soycecytem.mx" method="POST">
+                <!-- Reemplaza TU_CORREO_AQUI con tu dirección, por ejemplo: ejemplo@gmail.com -->
+
+                <label for="nombre" style="color:#ff6f00; font-weight:bold;">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required 
+                       style="width:90%; padding:8px; margin:8px 0; border-radius:5px; border:1px solid #ff6f00;"><br>
+
+                <label for="correo" style="color:#ff6f00; font-weight:bold;">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" required 
+                       style="width:90%; padding:8px; margin:8px 0; border-radius:5px; border:1px solid #ff6f00;"><br>
+
+                <label for="satisfaccion" style="color:#ff6f00; font-weight:bold;">Nivel de satisfacción:</label><br>
+                <select id="satisfaccion" name="satisfaccion" required 
+                        style="width:90%; padding:8px; margin:8px 0; border-radius:5px; border:1px solid #ff6f00;">
+                    <option value="">Seleccione...</option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Buena">Buena</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Mala">Mala</option>
+                </select><br>
+
+                <label for="comentarios" style="color:#ff6f00; font-weight:bold;">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" required
+                          style="width:90%; padding:8px; margin:8px 0; border-radius:5px; border:1px solid #ff6f00;"></textarea><br>
+
+                <!-- Campos ocultos para configurar FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nuevo comentario del sitio Día de Muertos">
+                <input type="hidden" name="_template" value="table">
+
+                <button type="submit" 
+                        style="background-color:#ff6f00; color:black; padding:10px 20px; border:none; border-radius:5px; font-weight:bold; cursor:pointer;">
+                    Enviar comentario
+                </button>
+            </form>
+        </div>
+    </div>
+
     <a href="#top" class="boton-volver">⬆️ Volver al inicio</a>
+
 
 </body>
 </html>
